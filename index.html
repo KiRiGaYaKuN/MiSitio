@@ -1,0 +1,30 @@
+
+<html>
+	<head>
+		<title>Mi mapa</title>
+		<link href="https://api.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.css" rel="stylesheet">
+		<script src="https://api.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.js"></script>
+
+	</head>
+	<body>
+
+		<div> 
+			<h1> PRIMER MAPA </h1> 
+			<h2> Prueba </h2>
+		</div>
+		
+
+		<div id="map" style='width: 1000px; height: 800px;'></div>
+
+		<script>
+			mapboxgl.accessToken = 'pk.eyJ1IjoiY3Jpc3RpYW4tcGF0aW5vIiwiYSI6ImNsNnNpd3F6czBxeXoza3A1NWZ3bnB4bGkifQ.O2bx9coNoydZNAKmAzcSBg';
+    			const map = new mapboxgl.Map({
+        		container: 'map', 
+        		style: 'mapbox://styles/mapbox/streets-v11', 
+        		center: [-74.297333, 4.570868], 
+        		zoom: 6 
+    			});
+		</script>
+
+	</body>
+</html>
